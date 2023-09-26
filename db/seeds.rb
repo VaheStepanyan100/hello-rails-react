@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+greeting_msgs = ['Hello Rails React', 'Welcome Rails React', 'Hello Webpack', 'Hello Redux', 'Hello World']
+
+greeting_msgs.each do |msg|
+  Message.create(content: msg)
+end
